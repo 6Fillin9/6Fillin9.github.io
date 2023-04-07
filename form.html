@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <title>Mariela</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__wrapper">
+        <a href="index.html"><img src="../img/logo.svg" alt=""></a>
+        <ul class="header__list navigation">
+          <li class="navigation__item"><a href="" class="navigation__link">Home</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link">About me</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link">Products</a></li>
+          <li class="navigation__item"><a href="form.html" class="navigation__link">Contact me</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link"><img src="../img/basket.svg" alt="" class="navigation__image"></a>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="login">
+        <div class="login__wrapper">
+          <h1 class="form__heading">Форма</h1>
+          <form action="//httpbin.org/post" method="post" class="login__form form">
+            <div class="form__wrapper">
+              <h2 class="form__title">Личная информация</h2>
+              <label class="form__label">Имя<input type="text" required name="name" placeholder="Введите имя" class="form__input"></label>
+              <label class="form__label">Пароль<input type="password" required name="password" placeholder="Введите пароль" class="form__input"></label>
+              <label class="form__label">Дата рождения<input type="date" required name="date" class="form__input"></label>
+              <fieldset class="form_fieldset">
+                <legend class="form__legend">Пол</legend>
+                <label class="form__label-checkbox"><input type="radio" value="male" name="sex" class="form__input-checkbox">Мужской</label>
+                <label class="form__label-checkbox"><input type="radio" value="female" name="sex" class="form__input-checkbox">Женский</label>
+              </fieldset>
+            </div>
+            <div class="form__wrapper">
+              <h2 class="form__title">Как с вами связаться</h2>
+              <label class="form__label">Почта<input type="email" required name="email" placeholder="Введите электронную почту" class="form__input"></label>
+              <label class="form__label">Телефон<input type="tel" required name="phone" placeholder="Введите номер телефона" class="form__input"></label>
+              <fieldset class="form_fieldset">
+                <legend class="form__legend">В какое время вам удобно ответить?</legend>
+                <label class="form__label-checkbox"><input type="checkbox" value="morning" class="form__input-checkbox">Утром</label>
+                <label class="form__label-checkbox"><input type="checkbox" value="day" class="form__input-checkbox">Днем</label>
+                <label class="form__label-checkbox"><input type="checkbox" value="evening" class="form__input-checkbox">Вечером</label>
+                <label class="form__label-checkbox"><input type="checkbox" value="night" class="form__input-checkbox">Ночью</label>
+              </fieldset>
+            </div>
+            <div class="form__buttons">
+              <button type="reset" class="form__button button-sub">Очистить</button>
+              <button type="submit" class="form__button button-sub">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__content-wrapper">
+            <img src="../img/logo2.svg" alt="" class="footer__logo">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="" class="footer__link">Home</a></li>
+              <li class="footer__item"><a href="" class="footer__link">About me</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Products</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Contact me</a></li>
+            </ul>
+          <a href="">
+            <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1_300)">
+              <rect width="36" height="36" transform="translate(0 0.921875)" fill="#D6BBD3"/>
+              <path d="M26.9985 0.929365L22.3302 0.921875C17.0854 0.921875 13.6961 4.39926 13.6961 9.78143V13.8663H9.00224C8.59664 13.8663 8.26819 14.1951 8.26819 14.6007V20.5192C8.26819 20.9248 8.59701 21.2532 9.00224 21.2532H13.6961V36.1875C13.6961 36.5931 14.0245 36.9215 14.4301 36.9215H20.5542C20.9598 36.9215 21.2883 36.5927 21.2883 36.1875V21.2532H26.7764C27.182 21.2532 27.5105 20.9248 27.5105 20.5192L27.5127 14.6007C27.5127 14.406 27.4352 14.2195 27.2977 14.0816C27.1603 13.9438 26.973 13.8663 26.7783 13.8663H21.2883V10.4035C21.2883 8.73915 21.6849 7.89425 23.8529 7.89425L26.9978 7.89312C27.403 7.89312 27.7314 7.5643 27.7314 7.15907V1.66342C27.7314 1.25857 27.4034 0.930114 26.9985 0.929365Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_1_300">
+              <rect width="36" height="36" fill="white" transform="translate(0 0.921875)"/>
+              </clipPath>
+            </defs>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__contacts contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__text">Version 1.2| Image</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__text">Licensing| Made By</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__text">Pablo Ramos| Visit My</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__text">Templates| Powered By</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__text">Webflow</p>
+            </li>
+          </ul>
+          <a href="#header">
+            <svg class="footer__arrow" width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1_320)">
+              <path d="M0 3.92188C0 2.26502 1.34315 0.921875 3 0.921875H30C31.6569 0.921875 33 2.26502 33 3.92188V30.9219H0V3.92188Z" fill="#BA9FB7"/>
+              <path d="M32.6703 21.4833L17.2602 7.47502C17.04 7.27466 16.7867 7.17432 16.5002 7.17432C16.2136 7.17432 15.9599 7.27466 15.7396 7.47502L0.330777 21.4833C0.110027 21.6839 0 21.9142 0 22.1748C0 22.4353 0.110375 22.6659 0.330777 22.8661L1.98374 24.3687C2.20414 24.5691 2.45778 24.6692 2.74432 24.6692C3.03085 24.6692 3.28449 24.5691 3.50489 24.3687L16.5002 12.555L29.4959 24.3694C29.7162 24.5698 29.97 24.6693 30.256 24.6693C30.543 24.6693 30.7967 24.5692 31.017 24.3694L32.6702 22.8662C32.8904 22.666 32.9999 22.4353 32.9999 22.1749C33 21.9142 32.8906 21.6836 32.6703 21.4833Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_1_320">
+              <path d="M0 3.92188C0 2.26502 1.34315 0.921875 3 0.921875H30C31.6569 0.921875 33 2.26502 33 3.92188V30.9219H0V3.92188Z" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

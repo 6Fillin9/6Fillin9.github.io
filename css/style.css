@@ -16,14 +16,23 @@
     padding: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-size: 0;
+}
+
+html {
+    height: 100%;
 }
 
 body {
+    height: 100%;
     font-family: 'Cormorant Garamond';
     font-style: normal;
     overflow-x:hidden; 
     color: var(--col-font-main);
+}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
 }
 
 a {
@@ -541,7 +550,88 @@ ul {
     bottom: 0;
 }
 
-h1{
-    color:green;
+.login {
+    padding: 60px 0;
+}
+
+.login__wrapper {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    background: var(--col-purp);
+    padding: 20px 150px 20px 20px;
+    position: relative;
+}
+
+.form__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.form__title {
     font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.form__input {
+    display: block;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+    padding: 0.2em 0.3em;
+}
+
+.form__legend {
+    font-size: 18px;
+}
+
+.form__label-checkbox {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.form__input-checkbox {
+    margin-right: 10px;
+}
+
+.form__buttons {
+    position: absolute;
+    background: var(--col-pink);
+    width: 300px;
+    height: 200px;
+    right: -170px;
+    top: calc(50% - 100px);
+    padding: 30px 50px;
+}
+
+.form__button {
+    background: none;
+    display: block;
+    padding-bottom: 6px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    border-bottom: 1px solid var(--col-wht);
+    cursor: pointer;
+    margin-bottom: 40px;
+    width: 100%;
 }
