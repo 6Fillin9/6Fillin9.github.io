@@ -34,7 +34,7 @@
               <label class="form__label">Дата рождения<input type="date" required name="date" class="form__input"></label>
               <fieldset class="form_fieldset">
                 <legend class="form__legend">Пол</legend>
-                <label class="form__label-checkbox"><input type="radio" value="male" name="sex" class="form__input-checkbox">Мужской</label>
+                <label class="form__label-checkbox"><input type="radio" value="male" name="sex" checked class="form__input-checkbox">Мужской</label>
                 <label class="form__label-checkbox"><input type="radio" value="female" name="sex" class="form__input-checkbox">Женский</label>
               </fieldset>
             </div>
@@ -44,19 +44,139 @@
               <label class="form__label">Телефон<input type="tel" required name="phone" placeholder="Введите номер телефона" class="form__input"></label>
               <fieldset class="form_fieldset">
                 <legend class="form__legend">В какое время вам удобно ответить?</legend>
-                <label class="form__label-checkbox"><input type="checkbox" name="feedback" value="morning" class="form__input-checkbox">Утром</label>
-                <label class="form__label-checkbox"><input type="checkbox" name="feedback" value="day" class="form__input-checkbox">Днем</label>
-                <label class="form__label-checkbox"><input type="checkbox" name="feedback" value="evening" class="form__input-checkbox">Вечером</label>
-                <label class="form__label-checkbox"><input type="checkbox" name="feedback" value="night" class="form__input-checkbox">Ночью</label>
+                <label class="form__label-checkbox"><input type="checkbox" value="morning" class="form__input-checkbox">Утром</label>
+                <label class="form__label-checkbox"><input type="checkbox" value="day" class="form__input-checkbox">Днем</label>
+                <label class="form__label-checkbox"><input type="checkbox" value="evening" class="form__input-checkbox">Вечером</label>
+                <label class="form__label-checkbox"><input type="checkbox" value="night" class="form__input-checkbox">Ночью</label>
               </fieldset>
             </div>
             <div class="form__buttons">
-              <button type="reset" class="form__button button-sub">Очистить</button>
+              <button type="reset" class="form__button button-sub button-disable">Очистить</button>
               <button type="submit" class="form__button button-sub">Отправить</button>
             </div>
           </form>
         </div>
       </section>
+
+      <section class="second_form">
+          <form action="">
+            <dl class="form__dl">
+              <dt class="form__dt">
+                Псевдоклассы
+              </dt>
+              <dd class="form__dd">Псевдоклассы - это элементы, которых не существует в HTML-разметке. Они создаются и позиционируются исключительно при помощи CSS. Чаще всего используются для создания различных декоративных элементов (которые не несут содержательного смысла).</dd>
+              <dt class="form__dt">
+                Псевдоэлементы
+              </dt>
+              <dd class="form__dd">Псевдоэлементы - особый вид селектора, который уточняет тип или состояние. Обычно это какой-то качественный признак: реакция на наведение курсора, порядок следования и другие.</dd>
+            </dl>
+            <div class="list_checkbox">
+              <ul class="list_class_checkbox">
+                <li class="list_class_item">
+                  <label class="class_checkbox">
+                    <input type="checkbox" checked>
+                    <span>:root</span>
+                  </label>
+                </li>
+                <li class="list_class_item">
+                  <label class="class_checkbox">
+                    <input type="checkbox" checked>
+                    <span>:link</span>
+                  </label>
+                </li>
+                <li class="list_class_item">
+                  <label class="class_checkbox">
+                    <input type="checkbox">
+                    <span>:visited</span>
+                  </label>
+                </li>
+                <li class="list_class_item">
+                  <label class="class_checkbox">
+                    <input type="checkbox" checked>
+                    <span>:hover</span>
+                  </label>
+                </li>
+                <li class="list_class_item">
+                  <label class="class_checkbox">
+                    <input type="checkbox">
+                    <span>:active</span>
+                  </label>
+                </li>
+                <li class="list_class_item">
+                  <label class="class_checkbox">
+                    <input type="checkbox" checked>
+                    <span>:focus</span>
+                  </label>
+                </li>
+                <li class="list_class_item">
+                  <label class="class_checkbox">
+                    <input type="checkbox" checked>
+                    <span>:required</span>
+                  </label>
+                  
+                  
+                </li>
+                <li class="list_class_item">
+                  <label class="class_checkbox">
+                    <input type="checkbox" checked>
+                    <span>:checked</span>
+                  </label>
+                </li>
+                <li class="list_class_item">
+                  <label class="class_checkbox">
+                    <input type="checkbox">
+                    <span>:disabled, :enabled</span>
+                  </label>
+                </li>
+              </ul>
+              <ul class="list_element_checkbox">
+                <li class="list_element_item">
+                  <label class="element_checkbox">
+                    <input type="checkbox" checked>
+                    <span>::first-letter</span>
+                  </label>
+                </li>
+                <li class="list_element_item">
+                  <label class="element_checkbox">
+                    <input type="checkbox">
+                    <span>::first-line</span>
+                  </label>
+                </li>
+                <li class="list_element_item">
+                  <label class="element_checkbox">
+                    <input type="checkbox" checked>
+                    <span>::after</span>
+                  </label>
+                  
+                </li>
+                <li class="list_element_item">
+                  <label class="element_checkbox">
+                    <input type="checkbox">
+                    <span>::marker</span>
+                  </label>
+                </li>
+                <li class="list_element_item">
+                  <label class="element_checkbox">
+                    <input type="checkbox" checked>
+                    <span>::before</span>
+                  </label>
+                </li>
+                <li class="list_element_item">
+                  <label class="element_checkbox">
+                    <input type="checkbox">
+                    <span>::selection</span>
+                  </label>
+                </li>
+                <li class="list_element_item">
+                  <label class="element_checkbox">
+                    <input type="checkbox" checked>
+                    <span>::placeholder</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </section>
     </main>
 
     <footer class="footer">
